@@ -1,0 +1,51 @@
+
+/* Author: Mitwa Patel, 000905034 */
+
+body{
+    font-family: Arial,Vardana;
+}
+
+.heading{
+    background-color: #E9EFFF;
+    text-align: center;
+}
+
+.navi{
+    padding-right: 47px;
+    margin: 17px;
+}
+
+li{
+    background-color: MediumSlateBlue;
+    display: inline-flex;
+    text-align: center;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 12px 40px 12px 30px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom: none;
+    margin: 0px 0px 0px 6px;
+    font-size: 27px;
+}
+
+li a{
+    display: inline;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+footer{
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+

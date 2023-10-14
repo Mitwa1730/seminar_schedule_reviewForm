@@ -1,0 +1,30 @@
+
+/* Author: Mitwa Patel, 000905034 */
+
+@media print{
+
+    nav, footer{
+        display: none;
+    }
+
+    table#schedule th, table#schedule td{
+        border-width: 0px;
+    }
+
+    table#schedule{
+        border: 0px solid black;    
+    }
+
+    .heading{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #change{
+        display: none;
+    }
+
+    
+}
+
+

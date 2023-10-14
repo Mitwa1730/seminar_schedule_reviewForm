@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Author: Mitwa Patel, 000905034 -->
+    <title>Outdoor Adventure Reviews</title>
+    <link href = "css/mobile.css" rel="stylesheet" type="text/css">
+    <link href = "css/adventuretyles.css" rel="stylesheet" type="text/css">
+    <link href = "css/printstyles.css" rel="stylesheet" type="text/css">
+    <style>
+
+        .container{
+            width:75%;
+            margin: auto;
+        }
+
+        form{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .days{
+            display: inline;
+        }
+
+        .form{
+            background-color: rgb(98, 53, 148);
+            padding: 10px;
+        }
+
+        fieldset{
+            color: white;
+        }
+
+        input[type=text]{
+            background-color: orchid;
+        }
+
+        input[type=submit]{
+            background-color: orchid;
+        }
+
+        input[type=reset]{
+            background-color: orchid;
+        }
+
+        table, td{
+            padding: 0px;
+        }
+
+        .about{
+            margin: 2px;
+            margin-top: -2px;
+        }
+
+        .season{
+            margin-bottom: 15px;
+        }
+
+        .review{
+            margin: auto;
+            text-align: center;
+        }
+
+        .review img{
+            height: 400px;
+            width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Outdoor Adventure Trip Reviews <br> 2022/2023 </h1> 
+    <nav>
+        <ul>
+            <li><a href = "#">About Us</a></li>
+            <li><a href = "#">Travel</a></li>
+            <li><a href = "#">Photos</a></li>
+            <li><a href = "#">Shop</a></li>
+            <li><a href = "reviews.html">Reviews</a></li>
+            <li><a href = "seminars.html">Seminars</a></li>
+            <li><a href = "#">Events</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+    <form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+        <input type="hidden" name="formname" value="Mitwa Patel Trip Review">
+
+        <div class="form">
+            <fieldset>
+                <legend>About You (optional)</legend>
+                <p class="about">I usually prefer to trips this time of year (select all that apply)</p>
+
+                <select name="season" class="season" multiple size="4">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+                <br>
+                
+                <div class="info">
+                    <label for="first name">First name &nbsp;</label><input type="text" id="first name" name="first name" maxlength="20"><br>
+                    <label for="last name">last name &nbsp;</label><input type="text" id="last name" name="last name" maxlength="20"><br>
+                    <label for="phone number">Phone Number &nbsp;</label><input type="text" id="phone number" name="phone number" placeholder="123-456-7890" maxlength="12"><br>
+                    <label for="email">Email Address &nbsp;</label><input type="text" id="email" name="email" placeholder="mitwa@example.com" maxlength="40"><br>
+            </div>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Trip Reviews</legend>
+                <select id="places" name="places">
+                    <option value="B c Coast">B.C. Coast</option>
+                    <option value="Alberta Rural">Alberta Rural</option>
+                    <option value="Ontario Lake Superior">Ontario Lake Superior</option>
+                    <option value="PEI">PEI</option>
+                    <option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+                </select>
+
+                <select id="days" name="days" class="days">
+                    <option value="5">5 Days</option>
+                    <option value="7">7 Days</option>
+                    <option value="10">10 Days</option> 
+                    <option value="14">14 Days</option>               
+                </select>
+
+                <p>Your Rating</p>
+
+                <table>
+                    <tr>
+                        <td><input type="radio" name="image"></td>
+                        <td><img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="image"></td>
+                        <td><img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="image"></td>
+                        <td><img src="images/wheel_sm.jpg" alt="wheel">
+                            <img src="images/wheel_sm.jpg" alt="wheel">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="image"></td>
+                        <td><img src="images/wheel_sm.jpg" alt="wheel"></td>
+                    </tr>
+                </table>
+
+                <p>Comments</p>
+
+                <textarea name="comments" rows="7" cols="65"></textarea>
+
+            </fieldset><br>
+
+            <fieldset>
+                <legend>I would be interested in these trips: (Check all that apply)</legend>
+                <input type="checkbox" id="trip1" name="trip1" value="Coast">
+                <label for="trip1">Sea or Lake Coast</label><br>
+
+                <input type="checkbox" id="trip2" name="trip2" value="Rural">
+                <label for="trip2">Rural</label><br>
+
+                <input type="checkbox" id="trip3" name="trip3" vale="mountains" checked>
+                <label for="trip3">Mountains</label><br>
+
+                <input type="checkbox" id="trip4" name="trip4" value="other">
+                <label for="trip4">Other (please specify)</label>
+                <textarea names="other" rows="1" cols="20"></textarea><br>
+ 
+            </fieldset><br>
+
+            <input type="submit" value="Send Review">
+            <input type="reset" value="Cancel">
+
+        </div>
+
+    </form><br>
+</div>
+
+    <div class="review">
+        <img src="images/mitwaTripReview.png" alt="tripReview">
+    </div>
+
+
+
+    <footer>
+        <div class="logoImg">
+            <img src="images/outdooradventurehorizontal.png" alt="logo">
+        </div>
+    </footer>
+    
+</body>
+</html>

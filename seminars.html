@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Author: Mitwa Patel, 000905034 -->
+    <title>Outdoor Adventure Seminars</title>
+    <link href = "css/mobile.css" rel="stylesheet" type="text/css">
+    <link href = "css/adventuretyles.css" rel="stylesheet" type="text/css">
+    <link href = "css/printstyles.css" rel="stylesheet" type="text/css">
+    <style>
+
+        .container{
+            width:75%;
+            margin: auto;
+        }
+
+        table#legend caption{
+            text-align: left;
+        }
+
+        #legend{
+            padding: 10px;
+        }
+
+        .bcycling{
+            background-color: orchid;
+        }
+
+        .ldistance{
+            background-color: cyan;
+        }
+
+        .hiking{
+            background-color: #FFFACD;
+        }
+
+        .camping{
+            background-color: #F4AF60;
+        }
+
+        table#legend th{
+            width: 5px;
+            padding-right: 2px;
+
+        }
+
+        table#legend td{
+            padding-left: 2px;
+            padding: 0px;
+
+        }
+
+        thead{
+            height: 10px;
+        }
+
+        table#schedule{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        table#schedule th, table#schedule td{
+            border: 1px solid black;
+        }
+
+        thead{
+            background-color: #002759;
+            color: white;
+        }
+
+        table, th, td{
+            padding: 6px;
+            height: 36px;
+        }
+
+        #firstcol{
+            background-color: #DDEEFF;
+            width: 10%;
+        }
+
+        .otherCols{
+            width: 12%;
+        }
+
+        .dustBg{
+            background-image: url(images/dust.jpg);
+            text-align: center;
+        }
+
+        #change{
+            text-align: right;
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Outdoor Adventure Seminars <br> 2022/2023 </h1> 
+    <nav class="navi">
+        <ul>
+            <li><a href = "#">About Us</a></li>
+            <li><a href = "#">Travel</a></li>
+            <li><a href = "#">Photos</a></li>
+            <li><a href = "#">Shop</a></li>
+            <li><a href = "reviews.html">Reviews</a></li>
+            <li><a href = "seminars.html">Seminars</a></li>
+            <li><a href = "#">Events</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div>
+            <table id="legend">
+                <caption>Legend:</caption>
+                <tr>
+                    <th class="bcycling"></th><td>Begineer Cycling</td>
+                    <th class="ldistance"></th><td>Long Distance Cycling</td>
+                    <th class="hiking"></th><td>Hiking</td>
+                    <th class="camping"></th><td>Camping</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table id="schedule">
+                
+                <colgroup>
+                    <col id="firstcol">
+                    <col class="otherCols" span="7">
+                </colgroup>
+
+                <div class="timetable">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>7 am - 9 am</th>
+                            <th>9 am - 11 am</th>
+                            <th>11 am - 12 pm</th>
+                            <th>12 pm - 2 pm</th>
+                            <th>2 pm - 4 pm</th>
+                            <th>6 pm - 8 pm</th>
+                            <th>8 pm - 10 pm</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Monday</th>
+                            <td class="bcycling">Beginner Cycling</td>
+                            <td class="hiking">Hiking</td>
+                            <td class="camping" colspan="5">Camping</td>
+                        </tr>
+
+                        <tr>
+                            <th>Tuesday</th>
+                            <td class="dustBg" colspan="7">Reserved for groups</td>
+                        </tr>
+
+                        <tr>
+                            <th>Wednesday</th>
+                            <td class="ldistance" rowspan="2">Long Distance Cycling Part 1</td>
+                            <td></td>
+                            <td class="bcycling">Beginner Cycling</td>
+                            <td class="camping" rowspan="2">Camping in Asia</td>
+                            <td class="ldistance" rowspan="2">Long Distance Cycling Part 2</td>
+                            <td class="hiking" rowspan="3" colspan="2">Hiking</td>
+                        </tr>
+
+                        <tr>
+                            <th>Thursday</th>
+                            <td class="camping">Camping</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Friday</th>
+                            <td class="camping" rowspan="4">Camping in Europe</td>
+                            <td class="bcycling" colspan="2">Beginner Cycling</td>
+                            <td></td>
+
+                        </tr>
+
+                        <tr>
+                            <th>Saturday</th>
+                            <td class="hiking" rowspan="2" colspan="3">Hiking</td>
+                            <td class="bcycling">Beginner Cycling</td>
+                            <td class="ldistance" rowspan="2" colspan="2">Long Distance Cycling Part 1 and 2</td>
+                        </tr>
+
+                        <tr>
+                            <th>Sunday</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Holidays</th>
+                            <td class="ldistance" colspan="2">Long Distance Cycling</td>
+                            <td class="dustBg" colspan="4">No Seminars</td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+        </div>
+
+        <p id="change">Schedule is subject to change</p>
+</div>
+
+    <footer>
+        <div class="logoImg">
+            <img src="images/outdooradventurehorizontal.png" alt="logo">
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+/* Author: Mitwa Patel, 000905034 */
+
+@media only screen and (max-width:599px){
+    .navi li{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navi a{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:899px){
+    .navi{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:900px){
+    .navi{
+        text-align: center;
+    }
+}
